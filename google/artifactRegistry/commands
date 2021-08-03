@@ -1,0 +1,30 @@
+Installing Google Cloud SDK (needed for terraform)
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-338.0.0-linux-x86_64.tar.gz
+tar xzvf google-cloud-sdk-338.0.0-linux-x86_64.tar.gz
+./google-cloud-sdk/install.sh
+
+create service account from browser and get key json file
+
+gcloud auth application-default login
+
+gcloud config get-value project -> terraform.tfvars
+
+
+gcloud services enable artifactregistry.googleapis.com
+
+I'm owner
+gcloud artifacts repositories add-iam-policy-binding my-first-repo --location europe-north1 --member=serviceAccount:degor-sa@degor-project.iam.gserviceaccount.com  --role=roles/owner
+
+Everybody! are writers(I't dangarous)
+gcloud artifacts repositories add-iam-policy-binding my-first-repo \
+--location=europe-north1 --member=allUsers --role=roles/artifactregistry.writer
+
+gcloud auth configure-docker europe-north1-docker.pkg.dev
+
+
+
+???gcloud config set artifacts/repository europe-north1-docker.pkg.dev/degor-project/my-first-repo
+
+
+docker tag nginx:latest europe-north1-docker.pkg.dev/degor-project/my-first-repo/nginx:latest
+docker push europe-north1-docker.pkg.dev/degor-project/my-first-repo/nginx:latest

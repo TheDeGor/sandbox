@@ -1,0 +1,89 @@
+- name: Install dependencies
+  apt:
+    name: python-apt
+    update_cache: yes
+
+- name: Install nginx
+  apt:
+    name: nginx
+    update_cache: yes
+
+- name: Replace NGINX config
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/nginx.conf
+  notify:
+    - Reload nginx
+
+- name: Remove default virtual host
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+  notify:
+    - Reload nginx
+
+- name: Create virual hosts available folder
+  file:
+    path: /etc/nginx/sites-available
+    state: directory
+    mode: '0755'
+
+- name: Create virual hosts enabled folder
+  file:
+    path: /etc/nginx/sites-enabled
+    state: directory
+    mode: '0755'
+
+- name: Create virual hosts specific conf folders
+  file:
+    path: /etc/nginx/sites-available/{{ url }}
+    state: directory
+    mode: '0755'
+
+
+- name: Create virual host html folders
+  file:
+    path: /var/www/{{ url }}/html
+    state: directory
+    mode: '0755'
+
+
+- name: Copy virtual host config
+  template:
+    src: nginx_vhost.conf.j2
+    dest: /etc/nginx/sites-available/{{ url }}/nginx_vhost.conf
+  notify:
+    - Reload nginx
+
+- name: Change virtual host config files ownership, group and permissions
+  file:
+    path: /etc/nginx/sites-available/{{ url }}/nginx_vhost.conf
+    owner: www-data
+    group: www-data
+    mode: '0644'
+
+
+- name: Copy index files
+  template:
+    src: index.html.j2
+    dest: /var/www/{{ url }}/html/index.html
+  notify:
+    - Reload nginx      
+
+- name: Change index files ownership, group and permissions
+  file:
+    path: /var/www/{{ url }}/html/index.html
+    owner: www-data
+    group: www-data
+    mode: '0644'
+
+
+- name: Create a symbolic links
+  file:
+    src: /etc/nginx/sites-available/{{ url }}/nginx_vhost.conf
+    dest: /etc/nginx/sites-enabled/nginx_vhost_{{ url }}.conf
+    owner: www-data
+    group: www-data
+    state: link
+  notify:
+    - Reload nginx

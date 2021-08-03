@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  roles: 
+    - role: webservers
+  remote_user: degor
+  become: yes 
+  become_user: root
+  become_method: sudo

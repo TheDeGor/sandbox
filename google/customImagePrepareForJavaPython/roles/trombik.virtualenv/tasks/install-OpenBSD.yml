@@ -1,0 +1,6 @@
+---
+
+- name: Install virtualenv
+  openbsd_pkg:
+    name: "{{ virtualenv_package }}"
+    state: present

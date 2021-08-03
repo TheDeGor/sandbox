@@ -1,0 +1,27 @@
+Installing Google Cloud SDK (needed for terraform)
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-338.0.0-linux-x86_64.tar.gz
+tar xzvf google-cloud-sdk-338.0.0-linux-x86_64.tar.gz
+./google-cloud-sdk/install.sh
+
+create service account from browser and get key json file
+
+gcloud auth application-default login
+
+
+
+gcloud config get-value project -> terraform.tfvars
+
+terraform init
+terraform apply
+
+configure kubectl
+gcloud container clusters get-credentials $(terraform output -raw kubernetes_cluster_name) --region $(terraform output -raw region)
+
+
+dashboard (optional)
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
+kubectl proxy
+
+kubectl apply -f ./kubernetes-dashboard-admin.rbac.yaml
+generate service token to dashboard
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep service-controller-token | awk '{print $1}')

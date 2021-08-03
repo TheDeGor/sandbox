@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rebrain",
+  "private_key_id": "5cceaef79196edaf7e5599763905b020442fd4e6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjGxEZxcvZDGc2\n9lyBILES9UgZ4WWoJUMoFGCrqof/3OksINFlW4eWbuBt5Y2GCYyZxeM2hn3hfSQy\nc2s92i82RMjx4LWK4eEYRBPkKXC8hQ2Uf7HTOSM/vxZknb8eT77hPIg/FfxKyrZP\nYKcjgyz68+FZ/Vd8xHnCcU3Oo1WgDELShe6DhYEDdGTLPISWn0v70OdN/QHOzWHS\n1LNfJraJNaJQE0tOZO9Bp158omnZaGahZ+iWiU8GXuggZoJMdsJmWIEyneTEQRrA\nibDO0tsuxEWnqT+mG5Bj2P9LLVNAW+9OPKEM5TVdpQNAQwcm9uH7lpkzhD+QgRHH\nBXH4Cd37AgMBAAECggEAAMPqPyA19iVAQLpEMdjo68lZ1sE/fFv8Zi4+S9/ndnRf\nZbUbtmmJB9QqWmmm0deuoLQUfleANLQlHNV8zdP9v7fv526h+25W44nCPCJTpJbN\nOwKkX3TXrP9lCADTej1ujFj/3KfqQKGV3GZ8Mkb1yZGmX4k4RV4Yoihs8IjEqJUU\nOF+Rh3dQeG4VuSStaoPSmbMJMe/7JAGC5v1bnfVjcHA3LL0vKHzjaf57mWh487IL\nI+OpErLo1Zq6oU8pnYWqjAP7Nlm080TaOKLJXjVebKzFESCuWO6djTAMmEEKV8Ys\nvXvjh3+e/x9pUsX2ONKdUiQVbsjtm0kD66i/ZdipAQKBgQDfNmjff/Q/qL+5F89c\nkTAyscdaCK2dT2C52+KajvWw8qXvp1M8hEm/V7M+niymtbgf0dehsKaA2zJJcxid\nzcUq7Abb16gmL60keyCGGgGUCwTLjbXYOe5ct0wqvXeJlh7Q5tI5/T6cMWiydSWH\nMr3l8+EmkLYpI0uZP6IvdFNbAQKBgQC7EG0P0VSIv2UJlfRkOATbP4RvvQvkt343\nKEOYV3i0JTWxCDDzLE4NdlG0kI9FSf0BWe2M8mNm7K62ychV+uvPhYjRnnYeVyK/\nVaNwpGLbtUb5+oZdVo/egSza9hQyt4tdIItGr8km6iB4mcJXwZMxg9VwP29FSU8b\njr2KcwOk+wKBgQDbMm1OfjL3iNmuBGnH93QjdF3WVotX3imYmwwux5ES0VaOv/yH\ng0mAs7j8Fwy2MeG8ra9Zw0XfaGI7quFTpkynV91sap1f0pXvK1LHHibKoP92fZVD\n36/qML6FgkYvQNLGRsXP2JdxfzvXdB8EY5oEhbhmzNl2EIke11SH0W5CAQKBgF0O\njNKjleP5InAkUtFQNMpEzMMxTitXRMh3lTjBuuAS6qTIqGEwFxwHUhn7F+qmJeB4\nNf45zk0zTK7NroVnL8uqaCevJp9tRXHdTlMI08zsXwSYJiNknmlX5VJ/vAiG2iNX\nvzFI3U4ohkK4ar9xIqItLQ6L3/SdxWa2GYA4OwXlAoGAUH3AYAJCxVkKQ/x7Kph3\nT33NIpFnGbiGFw551gUTwGD6OF/dXeKR4wfLEBxZes3EHB2ZTv6QB5Ffilqb3KsU\nMoDw8AR106J3uzHvCConroXKKKazsShPsywQxIur7va98zMPesXjt0LkQHSdgKCU\nN5k9e8fKc7Gc4WxcVCg2ah0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "devopsrebrain-744@rebrain.iam.gserviceaccount.com",
+  "client_id": "112271341984147896471",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/devopsrebrain-744%40rebrain.iam.gserviceaccount.com"
+}

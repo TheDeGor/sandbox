@@ -1,0 +1,6 @@
+---
+
+- name: Install virtualenv
+  apt:
+    name: "{{ virtualenv_package }}"
+    state: present

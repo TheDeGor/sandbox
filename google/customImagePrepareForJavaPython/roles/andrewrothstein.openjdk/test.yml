@@ -1,0 +1,55 @@
+---
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+      openjdk_app: jre
+      openjdk_ver:
+        major: 8
+        minor: 292
+        b: '10'
+  tasks:
+    - import_tasks: test-jre-exe.yml
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+      openjdk_app: jdk
+      openjdk_ver:
+        major: 8
+        minor: 292
+        b: '10'
+  tasks:
+    - import_tasks: test-jdk-exe.yml
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+      openjdk_app: jre
+      openjdk_ver:
+        major: 11
+        minor: 0
+        patch: 11
+        b: 9
+  tasks:
+    - import_tasks: test-jre-exe.yml
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+      openjdk_app: jdk
+      openjdk_ver:
+        major: 11
+        minor: 0
+        patch: 11
+        b: 9
+  tasks:
+    - import_tasks: test-jdk-exe.yml
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+      openjdk_app: jre
+  tasks:
+    - import_tasks: test-jre-exe.yml
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+      openjdk_app: jdk
+  tasks:
+    - import_tasks: test-jdk-exe.yml

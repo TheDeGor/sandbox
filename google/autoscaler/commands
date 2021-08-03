@@ -1,0 +1,5 @@
+gcloud compute instances describe autoscaler-instance-ckcg --zone=europe-north1-a --format=json | jq '.networkInterfaces[0].accessConfigs[0].natIP'
+"34.88.40.145"
+
+gcloud compute instances describe autoscaler-instance-ckcg --zone=europe-north1-a --format=json | jq '.labels.environment'
+"dev"

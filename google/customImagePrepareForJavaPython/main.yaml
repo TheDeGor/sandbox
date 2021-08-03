@@ -1,0 +1,21 @@
+---
+- hosts: imagemachine
+  roles:
+    # - role: python
+    - role: common
+    - role: trombik.virtualenv
+    - role: andrewrothstein.openjdk
+      openjdk_app: jre
+      openjdk_ver:
+        major: 16
+        minor: 0
+        patch: 1
+        b: 9
+    - role: gantsign.maven
+      maven_version: '3.8.1'
+  environment:
+    JAVA_HOME: /usr/local/openjdk/jdk-16.0.1+9-jre/
+  remote_user: degor
+  become: yes
+  become_user: root
+  become_method: sudo

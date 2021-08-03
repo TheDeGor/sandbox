@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "degor-project",
+  "private_key_id": "c1cae70600623530dfcc1cb37a27cd8eb539a588",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCf8YE+8HP1xR+E\nENyBt+CZmogxfEwFOYX9qbjWn5UBIIlMHgMZ2ISFZk7umIwjvTk+oQwQmD1TWIdz\nQiFmWxEM5A0h8xIYsKni44YVD+AxlLgibwstE76G9w2d80laAx8xn1D3VBYiBJJY\nMXwkZ8lNzhrgM2OKI3TofaP7AZPQ3zmaV2YKAH5RxplQZmJeqWS0HWyDc5UvMesB\n1i7CS1zXuiVj/t8v2xodvZnUS0rJhAjzwUUg5BKt0NFp6lgPFzE4maLluT4RbyWe\nrSMICfqhHkyXH+zfQJhUOld9j/eMB8ZThjRGZ5+91bK5lQqygTI3N50KW5xzS+bA\nzt2QMloxAgMBAAECggEADRn4RKfnp8h85hGHg9dZvjCqr/sG3cqyJMQupY4EOPJp\nrLgsotpZ3fTdHwLp6nzeio3LR4oLmUnVgTsih0LgaQDpPnsDDs4HLH8HWwRQ5gl7\nnSkhbjuBeNwV28wI7yb1pYKaXELMCVSnNDLhgLiWWcQ57rGRmXLWvxCY9RT8/w1D\nXpv1iwbKXGmV+CElioNG7dUxtsdTmvxTfosrLgKsXoWeFSUf+BBKLztNoWsKoa1F\ngnCGqjWCOJt2P1XCfGjlr6I2la5xTcShjoTPaASV5l+bKuToXwoq9ThDESa5OC1F\nH9j51SOxqsVlDOkrzEO3yhUH2VIFlhOn+eqI6uOBrQKBgQDdbrmajVGNBw5LORLZ\n/ld9v6jpeRR0xzvmI0uwsrc3iZSZfNa4pJ4kFJzBr8eBA+xHpIFM0Bfv38raS7Fe\n8N39YWm7G8d61y7Remw2pz6bGubYIkSH4/Oix/1KcOPVi6bf+Lgf7XJvibpNbvIF\nG653zUdwnwEntXCoIYW2PCdo3wKBgQC46XFgBFpf+tCbc/4b760G5mXAIQFOzn3P\nEZD5pCmkdh/8aHVVplPzRtgIYihy/q3HE9ymFX+LwioSQv0qi6mxEsDIv+WiiTVQ\nOWCbZdVwZD1DSH0SnNrDwosmEMR/xl4isGoUPyJLKAX6D4KbyFhsmRv4K10NLTGy\n3zGeu3zO7wKBgEDzFF/f6ba7BhdMY1orv0/0IsBwsm5abhhf6/ilQxZ4NW0b8ANy\nzav5m804GQWft/N/rilwtES42NBU+W7GqeaDZzbpvAYtDd+F0C3runJWXrWwv3c4\nhqMNlB78o+dkMgtp8d/zjuhmdo315+lVqEQdo0HGcdlK4AOA6a59UHXzAoGASxgK\nwfqilS3vv+HoRYIdW5r/oXoF5PI453nzzV4cxzxtmvz1AbaNi1Ou8iCi2qiQ/DMV\nvaEnbiOJIGdyFvAnFtFN13kPEeX078KNeC5v8rfSpVtv57opoayFBA11L4roud+5\nBMXq8GitnLLl0MwZFOlNEYjSvkInV8QKi7MKaaMCgYAWI5KFa6gDQVkyQlOnBlyo\nIxaPzCj32YRvZQqZjInDi1KCGSBqBiDq0ToTByBmgKqJZpSatQvEFFn2Zq2XKU1S\nH/tuUw/xVZPXsr0EOKLDBdaF0nri6wi/7arBvjPpu0CKIHfk36yoGxLXsKz0OLEj\nXnMM9M7AF3zg56GOyIj8jQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "repoaccount@degor-project.iam.gserviceaccount.com",
+  "client_id": "108830278315575360565",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/repoaccount%40degor-project.iam.gserviceaccount.com"
+}

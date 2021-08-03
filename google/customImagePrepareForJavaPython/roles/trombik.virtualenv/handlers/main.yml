@@ -1,0 +1,6 @@
+---
+
+- name: Restart virtualenv
+  service:
+    name: virtualenv
+    state: restarted

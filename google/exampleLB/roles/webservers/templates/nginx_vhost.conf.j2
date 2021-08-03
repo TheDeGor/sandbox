@@ -1,0 +1,7 @@
+server {
+    listen {{ webserver_port }} default_server;
+    server_name  {{ url }} www.{{ url }};
+    root {{ root_path }};
+    index {% for value in indexes -%} {{ value }} {% endfor -%};
+}
+
