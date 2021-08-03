@@ -1,0 +1,3 @@
+[submodule "google/bastionServer"]
+	path = google/bastionServer
+	url = https://github.com/TheDeGor/bastion
